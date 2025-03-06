@@ -12,7 +12,7 @@ mapped_pages:
 * Released on: 2024-12-23
 * [Changelog](https://github.com/logstash-plugins/logstash-integration-jdbc/blob/v5.5.2/CHANGELOG.md)
 
-For other versions, see the [Versioned plugin docs](logstash-docs://docs/reference/filter-jdbc_static-index.md).
+For other versions, see the [Versioned plugin docs](logstash-docs://reference/filter-jdbc_static-index.md).
 
 ## Getting help [_getting_help_147]
 
@@ -240,7 +240,7 @@ For loader performance reasons, the loading mechanism uses a CSV style file with
 
 ## Compatibility with the Elastic Common Schema (ECS) [plugins-filters-jdbc_static-ecs]
 
-This plugin is compatible with the [Elastic Common Schema (ECS)][Elastic Common Schema (ECS)](ecs://docs/reference/index.md)). It behaves the same regardless of ECS compatibility, except giving a warning when ECS is enabled and `target` isn’t set.
+This plugin is compatible with the [Elastic Common Schema (ECS)][Elastic Common Schema (ECS)](ecs://reference/index.md)). It behaves the same regardless of ECS compatibility, except giving a warning when ECS is enabled and `target` isn’t set.
 
 ::::{tip}
 Set the `target` option to avoid potential schema conflicts.
@@ -447,7 +447,7 @@ name
 :   The name of the table to be created in the database.
 
 columns
-:   An array of column specifications. Each column specification is an array of exactly two elements, for example `["ip", "varchar(15)"]`. The first element is the column name string. The second element is a string that is an [Apache Derby SQL type](https://db.apache.org/derby/docs/10.14/ref/crefsqlj31068.md). The string content is checked when the local lookup tables are built, not when the settings are validated. Therefore, any misspelled SQL type strings result in errors.
+:   An array of column specifications. Each column specification is an array of exactly two elements, for example `["ip", "varchar(15)"]`. The first element is the column name string. The second element is a string that is an [Apache Derby SQL type](https://db.apache.org/derby/docs/10.14/ref/crefsqlj31068.html). The string content is checked when the local lookup tables are built, not when the settings are validated. Therefore, any misspelled SQL type strings result in errors.
 
 index_columns
 :   An array of strings. Each string must be defined in the `columns` setting. The index name will be generated internally. Unique or sorted indexes are not supported.

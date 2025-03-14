@@ -11,7 +11,7 @@ mapped_pages:
 * Released on: 2025-01-06
 * [Changelog](https://github.com/logstash-plugins/logstash-integration-snmp/blob/v4.0.5/CHANGELOG.md)
 
-For other versions, see the [Versioned plugin docs](logstash-docs://docs/reference/integration-snmp-index.md).
+For other versions, see the [Versioned plugin docs](logstash-docs://reference/integration-snmp-index.md).
 
 ## Getting help [_getting_help_7]
 
@@ -135,7 +135,7 @@ The recommended ways to provide the additional path configuration are:
 * an environment variable, or
 * a config file to provide the additional path configuration.
 
-See the "MODULE LOCATIONS" section of the [smi_config documentation](https://www.ibr.cs.tu-bs.de/projects/libsmi/smi_config.md#MODULE%20LOCATIONS) for more information.
+See the "MODULE LOCATIONS" section of the [smi_config documentation](https://www.ibr.cs.tu-bs.de/projects/libsmi/smi_config.html#MODULE%20LOCATIONS) for more information.
 
 
 ### Option 1: Use an environment variable [plugins-integrations-snmp-env-var]

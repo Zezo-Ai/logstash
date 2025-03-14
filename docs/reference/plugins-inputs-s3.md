@@ -12,7 +12,7 @@ mapped_pages:
 * Released on: 2024-07-26
 * [Changelog](https://github.com/logstash-plugins/logstash-integration-aws/blob/v7.1.8/CHANGELOG.md)
 
-For other versions, see the [Versioned plugin docs](logstash-docs://docs/reference/input-s3-index.md).
+For other versions, see the [Versioned plugin docs](logstash-docs://reference/input-s3-index.md).
 
 ## Getting help [_getting_help_47]
 
@@ -100,7 +100,7 @@ This plugin uses the AWS SDK and supports several ways to get credentials, which
 * Value type is [hash](/reference/configuration-file-structure.md#hash)
 * Default value is `{}`
 
-Key-value pairs of settings and corresponding values used to parametrize the connection to s3. See full list in [the AWS SDK documentation](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/S3/Client.md). Example:
+Key-value pairs of settings and corresponding values used to parametrize the connection to s3. See full list in [the AWS SDK documentation](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/S3/Client.html). Example:
 
 ```ruby
     input {
@@ -180,7 +180,7 @@ Whether to delete processed files from the original bucket.
     * `v1`,`v8`: uses metadata fields that are compatible with Elastic Common Schema
 
 
-Controls this plugin’s compatibility with the [Elastic Common Schema (ECS)][Elastic Common Schema (ECS)](ecs://docs/reference/index.md)). See [Event Metadata and the Elastic Common Schema (ECS)](#plugins-inputs-s3-ecs_metadata) for detailed information.
+Controls this plugin’s compatibility with the [Elastic Common Schema (ECS)][Elastic Common Schema (ECS)](ecs://reference/index.md)). See [Event Metadata and the Elastic Common Schema (ECS)](#plugins-inputs-s3-ecs_metadata) for detailed information.
 
 
 ### `endpoint` [plugins-inputs-s3-endpoint]
@@ -262,7 +262,7 @@ The AWS Region
 * Value type is [string](/reference/configuration-file-structure.md#string)
 * There is no default value for this setting.
 
-The AWS IAM Role to assume, if any. This is used to generate temporary credentials, typically for cross-account access. See the [AssumeRole API documentation](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.md) for more information.
+The AWS IAM Role to assume, if any. This is used to generate temporary credentials, typically for cross-account access. See the [AssumeRole API documentation](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) for more information.
 
 
 ### `role_session_name` [plugins-inputs-s3-role_session_name]

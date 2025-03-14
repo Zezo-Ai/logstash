@@ -11,7 +11,7 @@ mapped_pages:
 * Released on: 2023-12-19
 * [Changelog](https://github.com/logstash-plugins/logstash-output-csv/blob/v3.0.10/CHANGELOG.md)
 
-For other versions, see the [Versioned plugin docs](logstash-docs://docs/reference/output-csv-index.md).
+For other versions, see the [Versioned plugin docs](logstash-docs://reference/output-csv-index.md).
 
 ## Getting help [_getting_help_68]
 
@@ -59,7 +59,7 @@ If the configured file is deleted, but an event is handled by the plugin, the pl
 * Value type is [hash](/reference/configuration-file-structure.md#hash)
 * Default value is `{}`
 
-Options for CSV output. This is passed directly to the Ruby stdlib to_csv function. Full documentation is available on the [Ruby CSV documentation page](http://ruby-doc.org/stdlib-2.0.0/libdoc/csv/rdoc/index.md). A typical use case would be to use alternative column or row separators eg: `csv_options => {"col_sep" => "\t" "row_sep" => "\r\n"}` gives tab separated data with windows line endings
+Options for CSV output. This is passed directly to the Ruby stdlib to_csv function. Full documentation is available on the [Ruby CSV documentation page](http://ruby-doc.org/stdlib-2.0.0/libdoc/csv/rdoc/index.html). A typical use case would be to use alternative column or row separators eg: `csv_options => {"col_sep" => "\t" "row_sep" => "\r\n"}` gives tab separated data with windows line endings
 
 
 ### `dir_mode` [plugins-outputs-csv-dir_mode]

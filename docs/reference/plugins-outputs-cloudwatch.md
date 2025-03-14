@@ -12,7 +12,7 @@ mapped_pages:
 * Released on: 2024-07-26
 * [Changelog](https://github.com/logstash-plugins/logstash-integration-aws/blob/v7.1.8/CHANGELOG.md)
 
-For other versions, see the [Versioned plugin docs](logstash-docs://docs/reference/output-cloudwatch-index.md).
+For other versions, see the [Versioned plugin docs](logstash-docs://reference/output-cloudwatch-index.md).
 
 ## Getting help [_getting_help_67]
 
@@ -47,7 +47,7 @@ At a minimum events must have a "metric name" to be sent to CloudWatch. This can
 
 Other fields which can be added to events to modify the behavior of this plugin are, `CW_namespace`, `CW_unit`, `CW_value`, and `CW_dimensions`.  All of these field names are configurable in this output.  You can also set per-output defaults for any of them. See below for details.
 
-Read more about [AWS CloudWatch](http://aws.amazon.com/cloudwatch/), and the specific of API endpoint this output uses, [PutMetricData](http://docs.amazonwebservices.com/AmazonCloudWatch/latest/APIReference/API_PutMetricData.md)
+Read more about [AWS CloudWatch](http://aws.amazon.com/cloudwatch/), and the specific of API endpoint this output uses, [PutMetricData](http://docs.amazonwebservices.com/AmazonCloudWatch/latest/APIReference/API_PutMetricData.html)
 
 
 ## Cloudwatch Output Configuration Options [plugins-outputs-cloudwatch-options]

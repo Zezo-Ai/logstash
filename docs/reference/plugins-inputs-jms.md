@@ -11,7 +11,7 @@ mapped_pages:
 * Released on: 2022-06-13
 * [Changelog](https://github.com/logstash-plugins/logstash-input-jms/blob/v3.2.2/CHANGELOG.md)
 
-For other versions, see the [Versioned plugin docs](logstash-docs://docs/reference/input-jms-index.md).
+For other versions, see the [Versioned plugin docs](logstash-docs://reference/input-jms-index.md).
 
 ## Getting help [_getting_help_33]
 
@@ -22,7 +22,7 @@ For questions about the plugin, open a topic in the [Discuss](http://discuss.ela
 
 Read events from a Jms Broker. Supports both Jms Queues and Topics.
 
-For more information about Jms, see [https://javaee.github.io/tutorial/jms-concepts.html](https://javaee.github.io/tutorial/jms-concepts.md). For more information about the Ruby Gem used, see [http://github.com/reidmorrison/jruby-jms](http://github.com/reidmorrison/jruby-jms).
+For more information about Jms, see [https://javaee.github.io/tutorial/jms-concepts.html](https://javaee.github.io/tutorial/jms-concepts.html). For more information about the Ruby Gem used, see [http://github.com/reidmorrison/jruby-jms](http://github.com/reidmorrison/jruby-jms).
 
 JMS configurations can be done either entirely in the Logstash configuration file, or in a mixture of the Logstash configuration file, and a specified yaml file. Simple configurations that do not need to make calls to implementation specific methods on the connection factory can be specified entirely in the Logstash configuration, whereas more complex configurations, should also use the combination of yaml file and Logstash configuration.
 
@@ -443,7 +443,7 @@ This represents the value of the subscriber name for a durable subscribtion, and
     * Otherwise, the default value is `disabled`.
 
 
-Controls this plugin’s compatibility with the [Elastic Common Schema (ECS)][Elastic Common Schema (ECS)](ecs://docs/reference/index.md)). The value of this setting affects the *default* value of [`headers_target`](#plugins-inputs-jms-headers_target) and [`properties_target`](#plugins-inputs-jms-properties_target).
+Controls this plugin’s compatibility with the [Elastic Common Schema (ECS)][Elastic Common Schema (ECS)](ecs://reference/index.md)). The value of this setting affects the *default* value of [`headers_target`](#plugins-inputs-jms-headers_target) and [`properties_target`](#plugins-inputs-jms-properties_target).
 
 
 ### `factory` [plugins-inputs-jms-factory]

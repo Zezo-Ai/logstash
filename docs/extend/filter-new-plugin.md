@@ -306,7 +306,7 @@ Deprecations are noted in the `logstash-deprecation.log` file in the `log` direc
 Gemfiles allow Ruby’s Bundler to maintain the dependencies for your plugin. Currently, all we’ll need is the Logstash gem, for testing, but if you require other gems, you should add them in here.
 
 ::::{tip}
-See [Bundler’s Gemfile page](http://bundler.io/gemfile.md) for more details.
+See [Bundler’s Gemfile page](http://bundler.io/gemfile.html) for more details.
 ::::
 
 
@@ -403,7 +403,7 @@ With these both defined, the install process will search for the required jar fi
 
 ## Document your plugin [_document_your_plugin_3]
 
-Documentation is an important part of your plugin. All plugin documentation is rendered and placed in the [Logstash Reference](/reference/index.md) and the [Versioned plugin docs](logstash-docs://docs/reference/integration-plugins.md).
+Documentation is an important part of your plugin. All plugin documentation is rendered and placed in the [Logstash Reference](/reference/index.md) and the [Versioned plugin docs](logstash-docs://reference/integration-plugins.md).
 
 See [Document your plugin](/extend/plugin-doc.md) for tips and guidelines.
 

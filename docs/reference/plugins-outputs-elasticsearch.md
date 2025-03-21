@@ -11,7 +11,7 @@ mapped_pages:
 * Released on: 2025-01-14
 * [Changelog](https://github.com/logstash-plugins/logstash-output-elasticsearch/blob/v12.0.1/CHANGELOG.md)
 
-For other versions, see the [Versioned plugin docs](logstash-docs://docs/reference/output-elasticsearch-index.md).
+For other versions, see the [Versioned plugin docs](logstash-docs://reference/output-elasticsearch-index.md).
 
 ## Getting help [_getting_help_74]
 
@@ -559,7 +559,7 @@ This sets the document type to write events to. Generally you should try to writ
     * Otherwise, the default value is `disabled`.
 
 
-Controls this plugin’s compatibility with the [Elastic Common Schema (ECS)][Elastic Common Schema (ECS)](ecs://docs/reference/index.md)), including the installation of ECS-compatible index templates. The value of this setting affects the *default* values of:
+Controls this plugin’s compatibility with the [Elastic Common Schema (ECS)][Elastic Common Schema (ECS)](ecs://reference/index.md)), including the installation of ECS-compatible index templates. The value of this setting affects the *default* values of:
 
 * [`index`](#plugins-outputs-elasticsearch-index)
 * [`template_name`](#plugins-outputs-elasticsearch-template_name)
@@ -598,7 +598,7 @@ HTTP Path where a HEAD request is sent when a backend is marked down the request
 * Value type is [uri](/reference/configuration-file-structure.md#uri)
 * Default value is `[//127.0.0.1]`
 
-Sets the host(s) of the remote instance. If given an array it will load balance requests across the hosts specified in the `hosts` parameter. Remember the `http` protocol uses the [http](elasticsearch://docs/reference/elasticsearch/configuration-reference/networking-settings.md) address (eg. 9200, not 9300).
+Sets the host(s) of the remote instance. If given an array it will load balance requests across the hosts specified in the `hosts` parameter. Remember the `http` protocol uses the [http](elasticsearch://reference/elasticsearch/configuration-reference/networking-settings.md) address (eg. 9200, not 9300).
 
 Examples:
 
@@ -609,7 +609,7 @@ Examples:
 `["https://127.0.0.1:9200"]`
 `["https://127.0.0.1:9200/mypath"]` (If using a proxy on a subpath)
 ```
-Exclude [dedicated master nodes](elasticsearch://docs/reference/elasticsearch/configuration-reference/node-settings.md) from the `hosts` list to prevent Logstash from sending bulk requests to the master nodes. This parameter should reference only data or client nodes in Elasticsearch.
+Exclude [dedicated master nodes](elasticsearch://reference/elasticsearch/configuration-reference/node-settings.md) from the `hosts` list to prevent Logstash from sending bulk requests to the master nodes. This parameter should reference only data or client nodes in Elasticsearch.
 
 Any special characters present in the URLs here MUST be URL escaped! This means `#` should be put in as `%23` for instance.
 
@@ -725,7 +725,7 @@ Updating the rollover alias will require the index template to be rewritten.
     * ECS Compatibility enabled: `"ecs-logstash-%{+yyyy.MM.dd}"`
 
 
-The indexing target to write events to. Can point to an [index](https://www.elastic.co/guide/en/elasticsearch/reference/current/index-mgmt.html), [alias](docs-content://manage-data/data-store/aliases.md), or [data stream](docs-content://manage-data/data-store/data-streams.md). This can be dynamic using the `%{{foo}}` syntax. The default value will partition your indices by day so you can more easily delete old data or only search specific date ranges. Indexes may not contain uppercase characters. For weekly indexes ISO 8601 format is recommended, eg. logstash-%{+xxxx.ww}. Logstash uses [Joda formats](http://www.joda.org/joda-time/apidocs/org/joda/time/format/DateTimeFormat.md) and the `@timestamp` field of each event is being used as source for the date.
+The indexing target to write events to. Can point to an [index](https://www.elastic.co/guide/en/elasticsearch/reference/current/index-mgmt.html), [alias](docs-content://manage-data/data-store/aliases.md), or [data stream](docs-content://manage-data/data-store/data-streams.md). This can be dynamic using the `%{{foo}}` syntax. The default value will partition your indices by day so you can more easily delete old data or only search specific date ranges. Indexes may not contain uppercase characters. For weekly indexes ISO 8601 format is recommended, eg. logstash-%{+xxxx.ww}. Logstash uses [Joda formats](http://www.joda.org/joda-time/apidocs/org/joda/time/format/DateTimeFormat.html) and the `@timestamp` field of each event is being used as source for the date.
 
 
 ### `manage_template` [plugins-outputs-elasticsearch-manage_template]
@@ -1167,7 +1167,7 @@ Username to authenticate to a secure Elasticsearch cluster
 
 How long to wait before checking for a stale connection to determine if a keepalive request is needed. Consider setting this value lower than the default, possibly to 0, if you get connection errors regularly.
 
-This client is based on Apache Commons. Here’s how the [Apache Commons documentation](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/conn/PoolingHttpClientConnectionManager.md#setValidateAfterInactivity(int)) describes this option: "Defines period of inactivity in milliseconds after which persistent connections must be re-validated prior to being leased to the consumer. Non-positive value passed to this method disables connection validation. This check helps detect connections that have become stale (half-closed) while kept inactive in the pool."
+This client is based on Apache Commons. Here’s how the [Apache Commons documentation](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/conn/PoolingHttpClientConnectionManager.html#setValidateAfterInactivity(int)) describes this option: "Defines period of inactivity in milliseconds after which persistent connections must be re-validated prior to being leased to the consumer. Non-positive value passed to this method disables connection validation. This check helps detect connections that have become stale (half-closed) while kept inactive in the pool."
 
 
 ### `version` [plugins-outputs-elasticsearch-version]

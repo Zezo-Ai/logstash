@@ -11,7 +11,7 @@ mapped_pages:
 * Released on: 2019-04-15
 * [Changelog](https://github.com/logstash-plugins/logstash-input-couchdb_changes/blob/v3.1.6/CHANGELOG.md)
 
-For other versions, see the [Versioned plugin docs](logstash-docs://docs/reference/input-couchdb_changes-index.md).
+For other versions, see the [Versioned plugin docs](logstash-docs://reference/input-couchdb_changes-index.md).
 
 ## Getting help [_getting_help_11]
 
@@ -20,7 +20,7 @@ For questions about the plugin, open a topic in the [Discuss](http://discuss.ela
 
 ## Description [_description_12]
 
-This CouchDB input allows you to automatically stream events from the CouchDB [_changes](http://guide.couchdb.org/draft/notifications.md) URI. Moreover, any "future" changes will automatically be streamed as well making it easy to synchronize your CouchDB data with any target destination
+This CouchDB input allows you to automatically stream events from the CouchDB [_changes](http://guide.couchdb.org/draft/notifications.html) URI. Moreover, any "future" changes will automatically be streamed as well making it easy to synchronize your CouchDB data with any target destination
 
 ### Upsert and delete [_upsert_and_delete]
 

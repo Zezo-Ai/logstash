@@ -1,14 +1,11 @@
 ---
-navigation_title: "Logstash"
+navigation_title: "Breaking changes"
 ---
 
 # Logstash breaking changes [logstash-breaking-changes]
-Before you upgrade, carefully review the Logstash breaking changes and take the necessary steps to mitigate any issues.
-
-To learn how to upgrade, check out <uprade docs>.
+Breaking changes can impact your Elastic applications, potentially disrupting normal operations. Before you upgrade, carefully review the Logstash breaking changes and take the necessary steps to mitigate any issues. To learn how to upgrade, check [Upgrade](docs-content://deploy-manage/upgrade.md).
 
 % ## Next version [logstash-nextversion-breaking-changes]
-% **Release date:** Month day, year
 
 % ::::{dropdown} Title of breaking change
 % Description of the breaking change.
@@ -18,7 +15,6 @@ To learn how to upgrade, check out <uprade docs>.
 % ::::
 
 ## 9.0.0 [logstash-900-breaking-changes]
-**Release date:** March 25, 2025
 
 ### Changes to SSL settings in {{ls}} plugins [ssl-settings-9.0]
 We’ve removed deprecated SSL settings in some {{ls}} plugins, and have replaced them with updated settings. If your plugin configuration contains any of these obsolete options, the plugin may fail to start.
@@ -203,4 +199,4 @@ We’ve removed deprecated SSL settings in some {{ls}} plugins, and have replace
 
 We’ve deprecated the {{ls}} Enterprise_search integration plugin, and its component App Search and Workplace Search plugins. These plugins will receive only security updates and critical fixes moving forward.
 
-We recommend using our native {{es}} tools for your Search use cases. For more details, please visit [Search UI with Elasticsearch](search-ui://docs/tutorials-elasticsearch.md).
+We recommend using our native {{es}} tools for your Search use cases. For more details, please visit the [Search solution and use case documentation](docs-content://solutions/search.md).

@@ -11,7 +11,7 @@ mapped_pages:
 * Released on: 2023-10-03
 * [Changelog](https://github.com/logstash-plugins/logstash-output-webhdfs/blob/v3.1.0/CHANGELOG.md)
 
-For other versions, see the [Versioned plugin docs](logstash-docs://docs/reference/output-webhdfs-index.md).
+For other versions, see the [Versioned plugin docs](logstash-docs://reference/output-webhdfs-index.md).
 
 ## Getting help [_getting_help_119]
 
@@ -20,7 +20,7 @@ For questions about the plugin, open a topic in the [Discuss](http://discuss.ela
 
 ## Description [_description_119]
 
-This plugin sends Logstash events into files in HDFS via the [webhdfs](https://hadoop.apache.org/docs/r1.0.4/webhdfs.md) REST API.
+This plugin sends Logstash events into files in HDFS via the [webhdfs](https://hadoop.apache.org/docs/r1.0.4/webhdfs.html) REST API.
 
 
 ## Dependencies [_dependencies]

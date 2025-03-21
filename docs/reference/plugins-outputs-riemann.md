@@ -11,7 +11,7 @@ mapped_pages:
 * Released on: 2020-07-15
 * [Changelog](https://github.com/logstash-plugins/logstash-output-riemann/blob/v3.0.7/CHANGELOG.md)
 
-For other versions, see the [Versioned plugin docs](logstash-docs://docs/reference/output-riemann-index.md).
+For other versions, see the [Versioned plugin docs](logstash-docs://reference/output-riemann-index.md).
 
 ## Installation [_installation_45]
 
@@ -132,7 +132,7 @@ Logstash’s default output behaviour is to never lose events As such, we use tc
 * Value type is [hash](/reference/configuration-file-structure.md#hash)
 * There is no default value for this setting.
 
-A Hash to set Riemann event fields ([http://riemann.io/concepts.html](http://riemann.io/concepts.md)).
+A Hash to set Riemann event fields ([http://riemann.io/concepts.html](http://riemann.io/concepts.html)).
 
 The following event fields are supported: `description`, `state`, `metric`, `ttl`, `service`
 

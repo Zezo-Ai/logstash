@@ -12,9 +12,9 @@ The goal of this document is to highlight the most common architecture patterns 
 
 ## Getting Started [deploying-getting-started]
 
-For first time users, if you simply want to tail a log file to grasp the power of the Elastic Stack, we recommend trying [Filebeat Modules](beats://docs/reference/filebeat/filebeat-modules-overview.md). Filebeat Modules enable you to quickly collect, parse, and index popular log types and view pre-built Kibana dashboards within minutes. [Metricbeat Modules](beats://docs/reference/metricbeat/metricbeat-modules.md) provide a similar experience, but with metrics data. In this context, Beats will ship data directly to Elasticsearch where [Ingest Nodes](docs-content://manage-data/ingest/transform-enrich/ingest-pipelines.md) will process and index your data.
+For first time users, if you simply want to tail a log file to grasp the power of the Elastic Stack, we recommend trying [Filebeat Modules](beats://reference/filebeat/filebeat-modules-overview.md). Filebeat Modules enable you to quickly collect, parse, and index popular log types and view pre-built Kibana dashboards within minutes. [Metricbeat Modules](beats://reference/metricbeat/metricbeat-modules.md) provide a similar experience, but with metrics data. In this context, Beats will ship data directly to Elasticsearch where [Ingest Nodes](docs-content://manage-data/ingest/transform-enrich/ingest-pipelines.md) will process and index your data.
 
-:::{image} ../images/deploy1.png
+:::{image} images/deploy1.png
 :alt: deploy1
 :::
 
@@ -42,7 +42,7 @@ Beats and Logstash make ingest awesome. Together, they provide a comprehensive s
 
 Beats run across thousands of edge host servers, collecting, tailing, and shipping logs to Logstash. Logstash serves as the centralized streaming engine for data unification and enrichment. The [Beats input plugin](/reference/plugins-inputs-beats.md) exposes a secure, acknowledgement-based endpoint for Beats to send data to Logstash.
 
-:::{image} ../images/deploy2.png
+:::{image} images/deploy2.png
 :alt: deploy2
 :::
 
@@ -56,7 +56,7 @@ Enabling persistent queues is strongly recommended, and these architecture chara
 
 Logstash is horizontally scalable and can form groups of nodes running the same pipeline. Logstash’s adaptive buffering capabilities will facilitate smooth streaming even through variable throughput loads. If the Logstash layer becomes an ingestion bottleneck, simply add more nodes to scale out. Here are a few general recommendations:
 
-* Beats should [load balance](beats://docs/reference/filebeat/elasticsearch-output.md#_loadbalance) across a group of Logstash nodes.
+* Beats should [load balance](beats://reference/filebeat/elasticsearch-output.md#_loadbalance) across a group of Logstash nodes.
 * A minimum of two Logstash nodes are recommended for high availability.
 * It’s common to deploy just one Beats input per Logstash node, but multiple Beats inputs can also be deployed per Logstash node to expose independent endpoints for different data sources.
 
@@ -82,7 +82,7 @@ Logstash will commonly extract fields with [grok](/reference/plugins-filters-gro
 
 Enterprise-grade security is available across the entire delivery chain.
 
-* Wire encryption is recommended for both the transport from [Beats to Logstash](beats://docs/reference/filebeat/configuring-ssl-logstash.md) and from [Logstash to Elasticsearch](/reference/secure-connection.md).
+* Wire encryption is recommended for both the transport from [Beats to Logstash](beats://reference/filebeat/configuring-ssl-logstash.md) and from [Logstash to Elasticsearch](/reference/secure-connection.md).
 * There’s a wealth of security options when communicating with Elasticsearch including basic authentication, TLS, PKI, LDAP, AD, and other custom realms. To enable Elasticsearch security, see [Secure a cluster](docs-content://deploy-manage/security.md).
 
 
@@ -97,7 +97,7 @@ If external monitoring is preferred, there are [monitoring APIs](monitoring-logs
 
 Users may have other mechanisms of collecting logging data, and it’s easy to integrate and centralize them into the Elastic Stack. Let’s walk through a few scenarios:
 
-:::{image} ../images/deploy3.png
+:::{image} images/deploy3.png
 :alt: deploy3
 :::
 
@@ -145,7 +145,7 @@ If you are leveraging message queuing technologies as part of your existing infr
 
 For users who want to integrate data from existing Kafka deployments or require the underlying usage of ephemeral storage, Kafka can serve as a data hub where Beats can persist to and Logstash nodes can consume from.
 
-:::{image} ../images/deploy4.png
+:::{image} images/deploy4.png
 :alt: deploy4
 :::
 

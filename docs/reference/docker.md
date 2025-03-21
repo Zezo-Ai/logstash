@@ -5,7 +5,7 @@ mapped_pages:
 
 # Running Logstash on Docker [docker]
 
-Docker images for Logstash are available from the Elastic Docker registry. The base image is [Red Hat Universal Base Image 8 Minimal](https://catalog.redhat.com/software/containers/ubi8/ubi-minimal/5c359a62bed8bd75a2c3fba8).
+Docker images for Logstash are available from the Elastic Docker registry. The base image is [Red Hat Universal Base Image 9 Minimal](https://catalog.redhat.com/software/containers/ubi9/ubi-minimal/61832888c0d15aff4912fe0d).
 
 A list of all published Docker images and tags is available at [www.docker.elastic.co](https://www.docker.elastic.co). The source code is in [GitHub](https://github.com/elastic/logstash/tree/master).
 
@@ -22,7 +22,7 @@ However, version 9.0.0 of Logstash has not yet been released, so no Docker image
 
 Although it’s optional, we highly recommend verifying the signatures included with your downloaded Docker images to ensure that the images are valid.
 
-Elastic images are signed with [Cosign](https://docs.sigstore.dev/cosign/overview/) which is part of the [Sigstore](https://www.sigstore.dev/) project. Cosign supports container signing, verification, and storage in an OCI registry. Install the appropriate [Cosign application](https://docs.sigstore.dev/cosign/installation/) for your operating system.
+Elastic images are signed with [Cosign](https://docs.sigstore.dev/quickstart/quickstart-cosign/) which is part of the [Sigstore](https://www.sigstore.dev/) project. Cosign supports container signing, verification, and storage in an OCI registry. Install the appropriate Cosign application for your operating system.
 
 Run the following commands to verify the container image signature for {{ls}} v9.0.0-beta1:
 
